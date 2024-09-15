@@ -1,0 +1,316 @@
+{
+  "mod_elements": [
+    {
+      "name": "QuantumMiner",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quantum_miner",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Quarry",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quarry",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/quantum_quarry/models/item/quarry.json",
+          "src/main/resources/assets/quantum_quarry/blockstates/quarry.json",
+          "src/main/resources/assets/quantum_quarry/models/block/quarry.json",
+          "src/main/java/net/mcreator/quantumquarry/block/QuarryBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Miner",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/quantum_quarry/blockstates/miner.json",
+          "src/main/java/net/mcreator/quantumquarry/block/entity/MinerBlockEntity.java",
+          "src/main/java/net/mcreator/quantumquarry/block/MinerBlock.java",
+          "src/main/resources/assets/quantum_quarry/models/item/miner.json",
+          "src/main/resources/assets/quantum_quarry/models/block/miner.json"
+        ]
+      }
+    },
+    {
+      "name": "QuantumMinerScreen",
+      "type": "gui",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quantum_miner_screen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quantumquarry/network/QuantumMinerScreenButtonMessage.java",
+          "src/main/java/net/mcreator/quantumquarry/client/gui/QuantumMinerScreenScreen.java",
+          "src/main/java/net/mcreator/quantumquarry/world/inventory/QuantumMinerScreenMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "MinerRecipe",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/quantum_quarry/recipes/miner_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "MagicSnowGlobe",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_snow_globe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/quantum_quarry/models/item/magic_snow_globe.json",
+          "src/main/java/net/mcreator/quantumquarry/item/MagicSnowGlobeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SnowGlobe",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snow_globe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quantumquarry/item/SnowGlobeItem.java",
+          "src/main/resources/assets/quantum_quarry/models/item/snow_globe.json"
+        ]
+      }
+    },
+    {
+      "name": "SnowGlobeRecipe",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snow_globe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/quantum_quarry/recipes/snow_globe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BiomeMarker",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biome_marker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quantumquarry/item/BiomeMarkerItem.java",
+          "src/main/resources/assets/quantum_quarry/models/item/biome_marker.json"
+        ]
+      }
+    },
+    {
+      "name": "BiomeMarkerRecipe",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biome_marker_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/quantum_quarry/recipes/biome_marker_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "MinerOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quantumquarry/procedures/MinerOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MinerTick",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quantumquarry/procedures/MinerTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MinerModeChange",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miner_mode_change",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quantumquarry/procedures/MinerModeChangeProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "SingleQuarryDbgUpdateTick",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "single_quarry_dbg_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/quantumquarry/procedures/SingleQuarryDbgUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SingleQuarryDbg",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "single_quarry_dbg",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/quantum_quarry/models/block/single_quarry_dbg.json",
+          "src/main/java/net/mcreator/quantumquarry/block/SingleQuarryDbgBlock.java",
+          "src/main/resources/assets/quantum_quarry/models/item/single_quarry_dbg.json",
+          "src/main/resources/assets/quantum_quarry/blockstates/single_quarry_dbg.json",
+          "src/main/java/net/mcreator/quantumquarry/block/entity/SingleQuarryDbgBlockEntity.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "gui.quantum_quarry.quantum_miner_screen.label_0": "0",
+      "gui.quantum_quarry.quantum_miner_screen.label_quantum_miner": "Quantum Miner",
+      "item_group.quantum_quarry.quantum_miner": "Quantum Miner",
+      "block.quantum_quarry.miner": "Miner",
+      "gui.quantum_quarry.quantum_miner_screen.label_quarry_level": "Quarry Level: ",
+      "item.quantum_quarry.magic_snow_globe": "Magic Snow Globe",
+      "block.quantum_quarry.single_quarry_dbg": "Single Quarry Dbg",
+      "item.quantum_quarry.snow_globe": "Snow Globe",
+      "gui.quantum_quarry.quantum_miner_screen.label_01": "0",
+      "gui.quantum_quarry.quantum_miner_screen.label_biome": "Biome: ",
+      "gui.quantum_quarry.quantum_miner_screen.label_none": "None",
+      "gui.quantum_quarry.quantum_miner_screen.button_empty": "",
+      "item.quantum_quarry.biome_marker": "Biome Marker",
+      "gui.quantum_quarry.quantum_miner_screen.button_r": "",
+      "gui.quantum_quarry.quantum_miner_screen.label_blocks_mined": "Blocks Mined:",
+      "block.quantum_quarry.quarry": "Quarry"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "quantum_quarry",
+    "modName": "Quantum Quarry",
+    "version": "1.0.0",
+    "author": "micha, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.mcreator.quantumquarry",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

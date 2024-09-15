@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "quantum_quarry:block/single_quarry_dbg"
+    }
+  }
+}

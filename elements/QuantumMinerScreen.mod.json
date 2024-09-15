@@ -1,0 +1,233 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 196,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_quantum_miner",
+          "text": {
+            "fixedValue": "Quantum Miner"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 26
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.ENCHANTED_BOOK"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 131,
+          "y": 39
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_quarry_level",
+          "text": {
+            "fixedValue": "Quarry Level: "
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 150,
+          "y": 39
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_blocks_mined",
+          "text": {
+            "fixedValue": "Blocks Mined:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 150,
+          "y": 50
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_biome",
+          "text": {
+            "fixedValue": "Biome: "
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 150,
+          "y": 61
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:BiomeMarker"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 131,
+          "y": 59
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "biome_marker_blank.png",
+          "use1Xscale": false,
+          "x": 132,
+          "y": 60
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_0",
+          "text": {
+            "fixedValue": "0"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 219,
+          "y": 40
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_01",
+          "text": {
+            "fixedValue": "0"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 219,
+          "y": 50
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_none",
+          "text": {
+            "fixedValue": "None"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 182,
+          "y": 61
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MinerModeChange"
+          },
+          "width": 20,
+          "height": 20,
+          "x": 130,
+          "y": 79
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_redstone_resize",
+          "image": "redstone_resize.png",
+          "hoveredImage": "",
+          "x": 132,
+          "y": 81
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "enchanted_book_skeleton.png",
+          "use1Xscale": false,
+          "x": 132,
+          "y": 40
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "unlitredstonetorchresize.png",
+          "use1Xscale": false,
+          "x": 133,
+          "y": 101
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "redstonetorchresize.png",
+          "use1Xscale": false,
+          "x": 151,
+          "y": 102
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energy_cell_level_0.png",
+          "use1Xscale": false,
+          "x": 279,
+          "y": 103
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
